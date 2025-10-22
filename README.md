@@ -1,1 +1,1 @@
-# Coffe-IA
+Olá meu nome é Renan Barros e nesse projeto irei criar uma pagina de café com um mini agente de IA
