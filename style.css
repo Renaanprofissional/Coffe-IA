@@ -21,6 +21,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .navbar {
@@ -47,6 +48,7 @@ header {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .nav-links a:hover {
@@ -111,3 +113,47 @@ header {
         color: #666666;
     }
 }
+
+.produtos{
+    padding: 5rem 2rem;
+    background-color: #fff;
+
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #2c1810;
+    }
+
+    .produtos-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .produto-card{
+        background-color: #f9f9f9;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .produto-card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .produto-icon{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .price{
+     font-weight: bold;
+     font-size: 1.5rem;
+     color: burlywood;
+    }
+}
+
